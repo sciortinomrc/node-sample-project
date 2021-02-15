@@ -18,6 +18,4 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: Meterian Pipeline Scanner@0
-  inputs:
-    meterian-api-token: 'ca054d04-2275-4fa3-a068-7fa01aa80eff'
+- task: Meterian Scanner@0
