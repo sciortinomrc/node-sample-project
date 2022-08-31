@@ -5,13 +5,9 @@ if [[ "$METERIAN_CLI_ARGS" =~ --debug ]]; then
     set -x
 fi
 
-# Adjusting PATH so that all needed tools are found
-echo 'export PATH=${ORIGINAL_PATH}' >> ~/.bashrc
-
 # Rust user-specific configuration setup
-echo 'export RUSTUP_HOME=/opt/rust/rustup' >> ~/.bashrc
-source ~/.bashrc
-
+chmod -R 777 /opt/rust/ >> /dev/null 2>&1 || true
+export RUSTUP_HOME=/opt/rust/rustup
 
 CLIENT_ENV=${CLIENT_ENV:-"www"}
 CLIENT_PROTO=${CLIENT_PROTO:-"https"}
