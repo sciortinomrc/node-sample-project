@@ -26,8 +26,10 @@ then
     mkdir /home/meterian
 fi
 
+ls -lat /tmp/build  
 for entry in `ls /tmp/build`
 do
+    ls -lat /tmp/build/$entry
     chown meterian:meterian /tmp/build/$entry
     chown meterian:meterian /tmp/build/$entry/*
 done
