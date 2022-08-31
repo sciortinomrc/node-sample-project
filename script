@@ -1,4 +1,4 @@
-cat meterian.sh
+cat /root/meterian.sh
 /root/meterian.sh --debug
 
 
