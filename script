@@ -1,18 +1,12 @@
-ls  /root
+for entry in `ls /tmp/build`
+do
+    chown meterian:meterian /tmp/build/$entry
+    chown meterian:meterian /tmp/build/$entry/*
+done
 
-cat /root/entrypoint.sh
 /root/entrypoint.sh
 
 echo "List of builds"
-ls /tmp/build 
 
-whoami
-for entry in `ls /tmp/build`
-do
-    ls /tmp/build/$entry
-    ls  -lat /tmp/build/$entry
-    mkdir  /tmp/build/$entry/test_folder
-    rm -r  /tmp/build/$entry/test_folder
-done
 
 
