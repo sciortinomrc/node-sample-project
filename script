@@ -1,5 +1,6 @@
 ls  /root
 
+cat /root/entrypoint.sh
 /root/entrypoint.sh
 
 echo "List of builds"
