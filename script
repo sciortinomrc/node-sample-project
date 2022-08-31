@@ -1,5 +1,12 @@
 ls  /root
 
-/root/entrypoint.sh  > /dev/null
+/root/entrypoint.sh
 
+echo "List of builds"
 ls /tmp/build 
+
+for entry in `ls /tmp/build`
+do
+    ls /tmp/build/$entry
+    ls  -lat /tmp/build/$entry
+done
