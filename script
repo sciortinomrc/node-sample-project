@@ -2,4 +2,4 @@ ls  /root
 
 /root/entrypoint.sh  > /dev/null
 
-ls /tmp/build
+ls /tmp/build 
