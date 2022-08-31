@@ -1,4 +1,4 @@
 cat /root/meterian.sh
-/bin/bash /root/meterian.sh --debug
+/bin/bash -x /root/meterian.sh --debug
 
 
