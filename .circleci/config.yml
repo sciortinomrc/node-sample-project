@@ -10,7 +10,7 @@ jobs:
       - run: |
             docker run --rm \
             --volume ${PWD}:/workspace --env METERIAN_API_TOKEN=$METERIAN_API_TOKEN \
-            meterian/cli [Meterian CLI Options]
+            meterian/cli
 workflows:
   version: 2
   commit-workflow:
